@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Weekly Intentions</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div id="emoji-container-back"></div>
+  
+  <div class="form-container">
+    <h1>time to set your intentions 🍓</h1>
+    <form id="intentions-form">
+      <div class="step active">
+        <label for="focus">🪴 what are 1–2 main focuses for this week?</label>
+        <input type="text" id="focus" name="focus" required>
+        <button type="button" onclick="nextStep()">next</button>
+      </div>
+      <div class="step">
+        <label for="avoid">🍯 what are you avoiding this week?</label>
+        <input type="text" id="avoid" name="avoid" required>
+        <button type="button" onclick="nextStep()">next</button>
+      </div>
+      <div class="step">
+        <label for="success">🌱 what will make this week feel successful?</label>
+        <input type="text" id="success" name="success" required>
+        <button type="submit">submit</button>
+      </div>
+    </form>
+  </div>
+
+  <div id="emoji-container-front"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
