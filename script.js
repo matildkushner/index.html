@@ -1,8 +1,9 @@
-// Show form only on Tuesdays
-const today = new Date().getDay(); // 2 = Tuesday
-if (today !== 2) {
-  document.body.innerHTML = "<div style='text-align:center; margin-top:50px;'>this form only appears on tuesdays 🌿</div>";
-}
+// Temporarily show form every day for testing
+// Comment this out when you're ready to go live
+// const today = new Date().getDay(); 
+// if (today !== 2) {
+//   document.body.innerHTML = "<div style='text-align:center; margin-top:50px;'>this form only appears on tuesdays 🌿</div>";
+// }
 
 // One-step-at-a-time logic
 function nextStep() {
